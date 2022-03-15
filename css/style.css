@@ -1,0 +1,63 @@
+/* body {
+    background-color: blue;
+} */
+
+/* soft reset-because there is default margin and padding */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* box-sizing include padding and border in in an elements total width and height, if we add increased padding, box size will not change */
+}
+
+.box {
+  background-color: salmon;
+  width: 100px;
+  height: 100px;
+}
+
+.paddingDemo {
+  padding: 5px; /* all sides have 5px */
+  padding: 2px 5px 10px 20px;
+  padding: 0 5px; /* TOP-BOTTOM=0px, LEFT-RIGHT=5px */
+}
+.borderRadiusDemo {
+  /* border: 3px solid green; */
+  border: 3px dotted green;
+  border-radius: 20px;
+}
+
+.marginDemo {
+  margin: 5px;
+}
+
+.centerDemo {
+  background-color: springgreen;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+.topBox {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.bottomBox {
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    margin-top: 30px;
+}
+
+.max-widthDemo {
+    width: 100%; 
+    max-width: 800px; /* For max-width to work correctly, your element needs to have a specified width */
+}
+
+.min-widthDemo {
+    width: 70%;
+    min-width: 340px; /* it does not get any smaller than 340px */
+    background-color: yellow;
+}
